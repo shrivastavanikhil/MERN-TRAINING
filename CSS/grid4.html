@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(188, 247, 129)
+        }
+        .class{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(83, 120, 46);
+            margin: 2px;
+        }
+        .container{
+           height: 600px;
+           width: 600px;
+           display: grid;
+           background-color: chartreuse;
+           border: 2px solid black;
+           grid-template-areas: "sidebar content-1 content-1 content-2 content-2" "sidebar content-3 content-4 content-4 content-5"
+           "content-6 content-3 content-4 content-4 content-5" "content-6 content-7 content-7 content-8 content-5 ";
+        }
+        .sidebar{
+          grid-area: sidebar;
+        }
+        .content-1{
+            grid-area: content-1;
+        }
+         .content-2{
+            grid-area: content-2;
+        }
+         .content-3{
+            grid-area: content-3;
+        }
+         .content-4{
+            grid-area: content-4;
+        }
+         .content-5{
+            grid-area: content-5;
+        }
+         .content-6{
+            grid-area: content-6;
+        }
+         .content-7{
+            grid-area: content-7;
+        }
+         .content-8{
+            grid-area: content-8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="class sidebar"> sidebar</div>
+    <div class="class content-1">1</div>
+    <div class="class content-2">2</div>
+    <div class="class content-3">3</div>
+    <div class="class content-4">4</div>
+    <div class="class content-5">5</div>
+    <div class="class content-6">6</div>
+    <div class="class content-7">7</div>
+    <div class="class content-8">8</div>
+    </div>
+</body>
+</html>

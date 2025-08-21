@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*by element name*/
+      /*  h1{
+            color: red;
+        }*/
+        h1:nth-child(even){
+            color:aqua
+        }
+        p:nth-child(even){
+            color: white;
+            background-color: black;
+        }
+        h1::before{
+           content: "jjjh";
+        }
+        .overlay{
+            width:200px;
+            height:200px;
+            background-color:red;
+        }
+        .overlay::before{
+            content:"this is hrading";
+            translate:scale(-50%);
+            transition:all ease-in 2s;
+        }
+        .overlay:hover::after{
+            content:"hlo this is me";
+            translate:scaleY(-50%);
+            background-color:green;
+        }
+        .overlay:hover::before{
+            content:"";
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>This is heading</h1> -->
+    <!-- <p>This is para</p>
+    <div id="demo">
+        This is by id 
+    </div>
+    <div class="demo2">
+        this is by class
+    </div> -->
+    <div class="overlay"></div>
+    <h1 class="heading"> this is heading 1</h1>
+    <h1>this is heading 2</h1>
+    <h1>this is heading 3</h1>
+    <h1>this is heading 4</h1>
+    <p>this is para1</p>
+    <p>this is para2</p>
+    <p>this is para3</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+        }
+        .class{
+              display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3px;
+        }
+       .container{
+        height: 500px;
+        width: 400px;
+        border : 3px solid black;
+        display: grid;
+        background-color: rgb(46, 46, 169);
+        grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer";
+       }
+    .header{
+        background-color: rgb(20, 20, 99);
+        grid-area: header;
+    }
+    .sidebar{
+        background-color: rgb(19, 19, 134);
+        grid-area: sidebar;
+    }
+    .content-1{
+        background-color: rgb(7, 7, 95);
+        grid-area: content-1;
+    }
+    .content-2{
+        background-color: rgb(56, 56, 196);
+        grid-area: content-2;
+    }
+    .content-3{
+        background-color: rgb(17, 17, 142);
+        grid-area: content-3;
+    }
+    .footer{
+        background-color: rgb(9, 9, 90);
+        grid-area: footer;
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="class header">header</div>
+    <div class="class sidebar">sidebar</div>
+    <div class="class content-1">c1</div>
+    <div class="class content-2">c2</div>
+    <div class="class content-3">c3</div>
+    <div class="class footer">f</div>
+    </div>
+</body>
+</html>

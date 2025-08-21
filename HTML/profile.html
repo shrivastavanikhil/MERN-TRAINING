@@ -4,15 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+             font-family: "Lobster Two", sans-serif;
+        }
+         #body
+         {
+            background-color: rgb(47, 58, 54);
+            color: aqua;
+         }
+         .headings{
+            color: rgb(249, 249, 244);
+            font-weight: bold;
+         }
+         header{
+            background-color: rgb(10, 69, 71);
+         }
+         #btn{
+            background-color: rgb(66, 78, 78);
+            color: aqua;
+         }
+         /* #btn ::before{
+            background-color: rgb(66, 78, 78);
+            color: aqua;
+         } */
+         #btn:hover{
+            color: rgb(66, 78, 78);
+            background-color: aqua;
+         }
+         img{
+            filter: sepia(60%)
+         }
+     ul{
+        align-items: center;
+     }
+
+    </style>
 </head>
-<body>
-    <center><header><h1>Profile</h1>
+<body id="body">
+    <center><header id="header"><h1>Profile</h1>
     <img src="images/nikhil (2).jpeg" alt="profile image" height="300">
-    <p>Aspiring Software Engineer. Ready t dive deep into the world of web development </p>
+    <p>Aspiring Software Engineer. Ready to dive deep into the world of web development </p>
     <hr>
     </header>
     </center>
-    <h2>Education</h2>
+    <h2 class="headings">Education</h2>
     <ul>
         <li>12th (Non-med)
         </li>
@@ -20,7 +59,7 @@
         <li>M.C.A (K.U.K University)</li>
     </ul>
     <hr>
-    <h2>Skills</h2>
+    <h2 class="headings">Skills</h2>
     <ol>
         <li>html</li>
         <li>Jvascript</li>
@@ -28,7 +67,7 @@
         <li>React</li>
     </ol>
     <hr>
-    <h2>Skills want to learn </h2>
+    <h2 class="headings">Skills want to learn </h2>
     <ul>
         <li>Advance js </li>
         <li>Mongodb</li>
@@ -37,7 +76,7 @@
     </ul>
     <hr>
     
-    <h2>My Projects</h2>
+    <h2 class="headings">My Projects</h2>
     <select name="" id="">
         <option value="Food Recipe app"><a href="https://foodssrecipe.netlify.app/">Food recipe app</a></option>
         <option value="">BMI Calculator</option>
@@ -45,7 +84,7 @@
         <option value="">Note app</option>
     </select>
     <hr>
-    <h2>Services You Want</h2>
+    <h2 class="headings">Services You Want</h2>
     <input type="checkbox" name="Website designing" id="">Website designing
     <input type="checkbox" name="" id="">Landing page
     <input type="checkbox">Web Apllication
@@ -80,6 +119,6 @@
     </form>
      <hr>
      
-     <input type="submit">
+     <input id="btn" type="submit">
 </body>
 </html>
